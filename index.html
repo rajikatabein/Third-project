@@ -2,66 +2,101 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font-awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- goole font  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font-awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- goole font  -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- tailwind and daisyui cdn -->
+  <!-- tailwind and daisyui cdn -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind config -->
+  <!-- tailwind config -->
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                manrope: "Manrope",
-              }
-            }
-          }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            pea: 'rgb(171, 239, 95)',
+
+            chai: ' rgb(115, 115, 115);',
+            sada: 'rgb(255, 255, 255)',
+            nil:'#7C68FF',
+            golapi:'#E7C1D3',
+            holud:'#EFDA6E',
+            sobuj:'#A4DAC3'
+
+
+          },
+          fontFamily: {
+            manrope: 'Manrope',
+          },
+        backgroundImage: {
+          inputback:"url('assets/bg.jpg')",
+          arrow:"url('.assets/Vector.png')",
         }
-      </script>
+        }
+      }
+    }
+  </script>
 
 </head>
 
 <body class="manrope">
 
-<!-- navbar -->
-<div class="navbar bg-base-100">
+  <!-- navbar -->
+  <div class="navbar w-11/12 lg:w-11/12 mx-auto py-10 bg-gradient-to-b from-sada to-white ">
     <div class="navbar-start">
+      <div class="  w-6 h-6 rounded-full bg-pea pl-1">
+        <i class="fa-solid fa-arrow-up rotate-45 "></i>
+      </div>
+      <a class="text-2xl font-bold">Rinterio</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li class="font-bold text-chai"><a>Home</a></li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <div class="  hidden lg:flex  lg:gap-1 lg:items-center">
+        <button class=" h-6 rounded-full bg-[rgb(255, 255, 255)] pl-1"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <button n class=" h-6 rounded-full bg-[rgb(255, 255, 255)] pl-1"><svg xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </button>
+        <button class="bg-pea px-4 py-2 rounded-2xl font-bold"> Book Consult <i
+            class="fa-solid fa-arrow-up rotate-45 rounded-full"></i></button>
+      </div>
+
+
+
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
           <li><a>Item 1</a></li>
           <li>
             <a>Parent</a>
@@ -73,27 +108,96 @@
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">daisyUI</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Item 1</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
+
     </div>
   </div>
+  <!-- section 1st part -->
+
+  <div class="hero w-11/12 mx-auto  opacity-100 ">
+
+    <div class="hero-content text-center pb-3">
+      <div>
+        <img class="" src="./assets/banner.png" alt="" srcset="">
+        <h1 class="text-5xl font-bold">A barn house of this design has a <br>striking appearance</h1>
+        <p class="py-6">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal <br> accents, and large windows that flood the space with natural light.
+        </p>
+        <button class="bg-pea bg-opacity-50 w-11/12 mx-auto lg:w-1/4 px-6 py-2 rounded-2xl font-bold mb-8 flex justify-center rounded-3xl"> View Details <span class="px-2"><div class="  w-6 h-6 rounded-full bg-pea pl-1">
+          <i class="fa-solid fa-arrow-up rotate-45 "></i></span>
+        </div></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 2 -->
+   <div class="w-11/12 mx-auto flex flex-col lg:flex-row gap-4">
+
+    <div class="w-11/12 lg:w-1/4 mb-4 lg:mb-24">
+      <div class="bg-golapi dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <div>
+         <img src="./assets/concept.png" alt="" srcset="">
+        </div>
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Concept</h3>
+        <p class="text-slate-600 dark:text-slate-400 mt-2 text-xl lg:text-lg ">
+          The barn house captivates with its blend of rustic charm and modern.
+        </p>
+      </div>
+     </div>
+
+     <div class="w-11/12 lg:w-1/4 mb-4 lg:mb-24">
+      <div class="bg-holud dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <div>
+         <img src="./assets/flow-chart.png" alt="" srcset="">
+        </div>
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Design Process</h3>
+        <p class="text-slate-600 dark:text-slate-400 mt-2 text-xl lg:text-lg ">
+          The barn house captivates with its blend of rustic charm and modern.
+        </p>
+      </div>
+     </div>
+
+     <div class="w-11/12 lg:w-1/4 mb-4 lg:mb-24">
+      <div class="bg-sobuj dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <div>
+         <img src="./assets/vision.png" alt="" srcset="">
+        </div>
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Supervision</h3>
+        <p class="text-slate-600 dark:text-slate-400 mt-2 text-xl lg:text-lg">
+          The barn house captivates with its blend of rustic charm and modern.
+        </p>
+      </div>
+     </div>
+
+     <div class="w-11/12 lg:w-1/4 mb-60 lg:mb-24">
+      <div class="bg-nil dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <div>
+         <img src="./assets/budget-planning.png" alt="" srcset="">
+        </div>
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Budget Planning</h3>
+        <p class="text-slate-600 dark:text-slate-400 mt-2 text-xl lg:text-lg">
+          The barn house captivates with its blend of rustic charm and modern.
+        </p>
+      </div>
+     </div>
+   </div>
+   
+<div class=" w-full bg-inputback">
+      <div class="  w-11/12 grid grid-cols-1 lg:w-4/6 lg:mx-auto   lg:py-10 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5  ">
+         <input type="text" placeholder="First name*" class="  input input-bordered w-full max-w-xs rounded-3xl " />
+   
+         <input type="text" placeholder="Last name*" class="  input input-bordered w-full max-w-xs rounded-3xl" />
+   
+         <input type="number" placeholder="Phone number*" class="input input-bordered w-full max-w-xs rounded-3xl" />
+   
+         <input type="email" placeholder="Email number*" class="input input-bordered w-full max-w-xs rounded-3xl" />
+         
+         <textarea
+         placeholder="Bio"
+         class="textarea textarea-bordered textarea-lg
+          w-full col-span-2 rounded-3xl "></textarea>
+   
+      </div>
 
 </body>
 
