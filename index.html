@@ -114,14 +114,16 @@
 
       </div>
     </div>
-  </div>
-  <!-- section 1st part -->
+  </div> 
+  <!--  section 1st part -->
 
-  <div class="hero w-10/12 mx-auto  opacity-100 ">
+  <div class="hero w-10/12 mx-auto  opacity-100 "> 
 
     <div class="hero-content text-center pb-3">
       <div>
+       <div class="flex justify-center">
         <img class="" src="./assets/banner.png" alt="" srcset="">
+       </div>
         <h1 class="text-5xl font-bold">A barn house of this design has a <br>striking appearance</h1>
         <p class="py-6">
           The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
@@ -145,9 +147,11 @@
   <div class=" w-full bg-sada">
     <div class="  w-10/12  mx-auto py-24  flex flex-col gap-9 justify-center  lg:flex-row ">
       <div class=" relative w-full lg:w-1/2 ">
-        <img class=" hidden lg:absolute lg:my-[-55px] lg:mx-[-80px]" src="./assets/Vector.png" alt="" srcset="">
+        <img class="  hidden lg:block lg:absolute lg:my-[-30px] lg:mx-[-80px]" src="./assets/Vector.png" alt="" srcset="">
 
-        <button class="px-6 py-2 text-lg bg-white rounded-3xl ">About us</button>
+      
+          <button class="px-6 py-2 text-lg bg-white rounded-3xl ">About us</button>
+        
 
         <h1 class="text-4xl text-center  lg:text-left lg:text-5xl my-6 font-bold ">We design thoughtful, liveable spaces
         </h1>
@@ -155,7 +159,9 @@
           of rustic charm and
           modern sophistication, featuring weathered wood, sleek metal accents.</p>
         <div class="flex flex-row bg-white justify-start items-center lg:px-6 rounded-xl py-5 px-4 my-5 lg:h-34">
-          <div><img src="./assets/commercial.png" alt="" srcset=""></div>
+         <div>
+          <div class="h-full object-cover"><img class=" flex flex-c justify-center"  src="./assets/commercial.png" alt="" srcset=""></div>
+         </div>
           <div class="px-2 lg:px-6">
             <h1 class="text-2xl pb-4 lg:3xl  font-bold">Commercial</h1>
             <p class="text-lg text-gray-500 lg:text-xl">The barn house captivates with its blend of rustic charm and
@@ -180,7 +186,7 @@
     <!-- card 2 -->
 
     <div class="w-full mx-auto ">
-      <div class="w-full mx-auto">
+      <div class="w-full mx-auto flex justify-center">
         <button class="px-6 py-2 text-lg bg-white rounded-3xl "> <span> <i
               class="fa-solid fa-arrow-up rotate-90 mx-2 text-black "></i></span>About us </button>
       </div>
@@ -246,7 +252,7 @@
 
 
   <div class="w-full mx-auto ">
-    <div class="w-full mx-auto">
+    <div class="w-full mx-auto flex justify-center">
       <button class="px-6 py-2 text-lg bg-white shadow-lg rounded-3xl "> <span> <i
             class="fa-solid fa-arrow-up rotate-90 mx-2 text-black "></i></span>let's Explore our latest works</button>
     </div>
@@ -257,7 +263,7 @@
   
   <div class="w-10/12 mx-auto my-5 grid grid-cols-1 gap-4 lg:grid-cols-3">
     <div class="flex flex-col gap-2 lg:flex-row rounded-lg   col-span-2 border border-gray-400">
-      <div class="w-full  mx-auto lg:ml-5 py-4">
+      <div class="w-full h-full object-cover  mx-auto lg:ml-5 py-4">
         <img src="./assets/img1.png" alt="" srcset="">
       </div>
       <div class="items-center pt-2">
@@ -283,8 +289,8 @@
 
 
     <div class="flex flex-col gap-2 lg:flex-row rounded-lg py-5 col-span-2 border border-gray-400 mx-3 px-3">
-      <div class="w-full  mx-auto lg:w-1/2 h-full">
-        <img src="./assets/img4.png" alt="" srcset="">
+      <div class="w-full  mx-auto lg:w-1/2 h-full object-cover">
+        <img class="h-full object-cover" src="./assets/img4.png" alt="" srcset="">
       </div>
       <div class="items-center lg:w-1/2">
         <h1 class="text-4xl font-bold">Commercial</h1>
@@ -353,8 +359,8 @@
 
   <div class="w-full bg-inputback mx-auto my-8">
 
-    <div class="w-full mx-auto ">
-      <div class="w-full mx-auto">
+    <div class="w-full mx-auto my-5 ">
+      <div class="w-full flex justify-center m">
         <button class="px-6 py-2 text-lg bg-pea bg-opacity-65 rounded-3xl "> <span> <i
               class="fa-solid fa-arrow-up rotate-90 mx-2 text-black "></i></span>let's connect</button>
       </div>
@@ -362,21 +368,41 @@
       <p class="text-lg text-gray-800 lg:text-lg text-center pb-10">The barn house captivates with its blend of rustic
         charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
     </div>
-    <div class=" w-4/6 mx-auto   py-10 grid grid-cols-2 gap-x-5 gap-y-5
-    lg:gap-x-1">
-       <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
- 
-       <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
- 
-       <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
- 
-       <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-       
-       <textarea
-       placeholder="Bio"
-       class="textarea textarea-bordered textarea-lg
-        w-full col-span-2 py-5"></textarea>
- 
+    <div class="flex justify-center">
+
+      <div class=" w-4/6 mx-auto   py-10 flex flex-col gap-5 lg:grid grid-cols-2 justify-center">
+
+    
+  
+        <div class="block flex justify-end">
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+   
+        </div>
+
+        <div class="block flex ">
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+   
+        </div>
+         
+        <div class="block flex justify-end">
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+   
+        </div>
+         
+        <div class="block flex ">
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+   
+        </div>
+         
+         
+          <textarea
+          placeholder="Bio"
+          class="textarea textarea-bordered textarea-lg
+           w-full col-span-2 py-5"></textarea>
+    
+        
+      </div>
+
     </div>
 
   </div>
@@ -385,12 +411,14 @@
 
   <footer class="w-full bg-black bg-opacity-85">
 
-    <div class=" w-10/12 mx-auto lg:w-4/6  flex flex-col justify-center items-center border border-red-400 py-24">
-      <div class="navbar-start flex flex-row items-center text-center">
-        <div class="  w-6 h-6 rounded-full bg-pea pl-1">
-          <i class="fa-solid fa-arrow-up rotate-45 "></i>
+    <div class=" w-10/12 mx-auto lg:w-4/6  flex flex-col justify-center items-center  py-24">
+      <div class="flex justify-center">
+        <div class="navbar-start flex flex-row items-center text-center  justify-center">
+          <div class="  w-6 h-6 rounded-full bg-pea pl-1">
+            <i class="fa-solid fa-arrow-up rotate-45 "></i>
+          </div>
+          <a class="text-2xl font-bold text-white ">Rinterio</a>
         </div>
-        <a class="text-2xl font-bold text-white ">Rinterio</a>
       </div>
       <div>
         <ul class="menu menu-horizontal flex flex-col justify-center lg:flex-row text-white py-8 lg:py-5 ">
